@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <title>Slider</title>
+     <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+ 
+	<div class="sizes">
+		<span onclick="sliderOne.setWidth(320)">320px</span>
+		<span onclick="sliderOne.setWidth(480)">480px</span>
+		<span onclick="sliderOne.setWidth(600)">600px</span>
+		<span onclick="sliderOne.setWidth(720)">720px</span>
+		<span onclick="sliderOne.setWidth(800)">800px</span>
+		<span onclick="sliderOne.setWidth(960)">960px</span>
+		<span onclick="sliderOne.setWidth(1024)">1024px</span>
+		<span onclick="sliderOne.setWidth(1200)">1200px</span>
+		<span onclick="sliderOne.setWidth('full')">100%</span>
+	</div>
+		
+	<div id="slider" class="slider">
+		<div class="carousel slider__slides">
+			<img src="img/pic1.jpg" alt=""><img src="img/pic2.jpg" alt=""><img src="img/pic3.jpg" alt=""><img src="img/pic4.jpg" alt=""><img src="img/pic5.jpg" alt=""><img src="img/pic6.jpg" alt="">
+		</div>
+		<div class="slider__navigation">
+			<span class="slider__prev" onclick="sliderOne.slideRotate('prev')"></span>
+			<span class="slider__next" onclick="sliderOne.slideRotate('next')"></span>
+		</div>
+		<div class="dots slider__dots"></div>
+		<div class="autoplay slider__autoplay" onclick="sliderOne.autoplay('next')" data-auto="pause"></div>
+	</div>
+
+	<div id="slider-two" class="slider">
+		<div class="carousel slider__slides">
+			<img src="img/pic1.jpg" alt=""><img src="img/pic2.jpg" alt=""><img src="img/pic3.jpg" alt=""><img src="img/pic4.jpg" alt=""><img src="img/pic5.jpg" alt=""><img src="img/pic6.jpg" alt="">
+		</div>
+		<div class="slider__navigation">
+			<span class="slider__prev" onclick="sliderTwo.slideRotate('prev')"></span>
+			<span class="slider__next" onclick="sliderTwo.slideRotate('next')"></span>
+		</div>
+		<div class="dots slider__dots"></div>
+		<div class="autoplay slider__autoplay" onclick="sliderTwo.autoplay('next')" data-auto="pause"></div>
+	</div>
+
+	<div id="slider-three" class="slider">
+		<div class="carousel slider__slides">
+			<img src="img/pic1.jpg" alt=""><img src="img/pic2.jpg" alt=""><img src="img/pic3.jpg" alt=""><img src="img/pic4.jpg" alt=""><img src="img/pic5.jpg" alt=""><img src="img/pic6.jpg" alt="">
+		</div>
+		<div class="slider__navigation">
+			<span class="slider__prev" onclick="sliderThree.slideRotate('prev')"></span>
+			<span class="slider__next" onclick="sliderThree.slideRotate('next')"></span>
+		</div>
+		<div class="dots slider__dots"></div>
+		<div class="autoplay slider__autoplay" onclick="sliderThree.autoplay('next')" data-auto="pause"></div>
+	</div>
+
+	 <script src="js/main.js"></script>
+ </body>
+</html>
